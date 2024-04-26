@@ -1,0 +1,82 @@
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: Arial, sans-serif; 
+  font-size: 1.3rem;
+}
+
+
+body{ 
+background-color: rgb(247, 245, 245);
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.search_container{ 
+display: flex; 
+flex-direction: row; 
+text-align: center; 
+justify-content: center;
+align-items: center; 
+}
+
+form {
+  margin-bottom: 20px; 
+  width: 100%;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 40%;
+  border-radius: 30px;
+  border: none;  
+  box-shadow: 10px 10px 10px silver,-10px -10px -10px silver;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background-color:#b8a9b4;
+  color: #fff;
+  border: none;
+  cursor: pointer; 
+  border-radius: 30px; 
+  margin-left: 10px;
+}
+
+.weather-display { 
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px; 
+  max-width: 700px !important;
+  margin: auto; 
+  border: 1px solid; 
+  width: 80%; 
+  box-shadow: 5px 5px 5px black, -5px -5px 5px black;
+  padding: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  input[type="text"] {
+    width: 80%;
+  }
+
+  button { 
+    margin-top: 10px;
+    width: 80%;
+  }
+}
